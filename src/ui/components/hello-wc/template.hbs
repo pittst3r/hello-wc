@@ -1,3 +1,9 @@
-<div>
-  <h1>Welcome to Glimmer!</h1>
-</div>
+<hello-wc>
+  <form onsubmit={{action doSomething}}>
+    {{#each labels key="@index" as |label|}}
+      <cool-input-wc type="text">
+        {{label}}
+      </cool-input-wc>
+    {{/each}}
+  </form>
+</hello-wc>
