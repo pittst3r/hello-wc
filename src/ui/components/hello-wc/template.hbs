@@ -1,7 +1,7 @@
 <hello-wc>
   <form onsubmit={{action doSomething}}>
     {{#each labels key="@index" as |label|}}
-      <cool-input-wc type="text">
+      <cool-input-wc text="button text from caller attribute">
         {{label}}
       </cool-input-wc>
     {{/each}}

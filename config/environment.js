@@ -3,7 +3,12 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'hello-wc',
-    environment: environment
+    environment: environment,
+    GlimmerENV: {
+      FEATURES: {
+        'glimmer-custom-component-manager': true
+      }
+    }
   };
 
   return ENV;
