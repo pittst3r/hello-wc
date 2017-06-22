@@ -1,9 +1,5 @@
 <hello-wc>
-  <form onsubmit={{action doSomething}}>
-    {{#each labels key="@index" as |label|}}
-      <cool-input-wc text="button text from caller attribute">
-        {{label}}
-      </cool-input-wc>
-    {{/each}}
-  </form>
+  <cool-button-wc color={{color}}>
+    {{text}}
+  </cool-button-wc>
 </hello-wc>

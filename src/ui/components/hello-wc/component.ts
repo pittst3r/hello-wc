@@ -1,11 +1,6 @@
-import Component from "@glimmer/component";
+import Component from '@glimmer/component';
 
 export default class HelloWc extends Component {
-  doSomething(): void {
-    alert('lol');
-  }
-
-  get labels(): string[] {
-    return ['Name'];
-  }
+  color = 'red';
+  text = 'initial value from outer glimmer template';
 }

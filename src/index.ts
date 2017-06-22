@@ -1,6 +1,6 @@
 import App from './main';
-import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
-import { initializeCustomElement, CustomElementComponentManager } from '@glimmer/web-component';
+import { ComponentManager } from '@glimmer/component';
+import { initializeCustomElement, CustomElementComponentManager, setPropertyDidChange } from '@glimmer/web-component';
 
 const app = new App();
 const containerElement = document.getElementById('app');
@@ -16,6 +16,6 @@ app.registerInitializer({
   }
 });
 
-initializeCustomElement(app, 'cool-input', 'cool-input-wc', ['text']);
+initializeCustomElement(app, 'cool-button', 'cool-button-wc', ['color']);
 app.renderComponent('hello-wc', containerElement);
 app.boot();
