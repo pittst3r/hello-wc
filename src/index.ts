@@ -1,11 +1,15 @@
 import App from './main';
-import { ComponentManager } from '@glimmer/component';
-import { initializeCustomElement, CustomElementComponentManager, setPropertyDidChange } from '@glimmer/web-component';
+import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
+import { initializeCustomElement, CustomElementComponentManager, setPropertyDidChange as setPropertyDidChangeWc } from '@glimmer/web-component';
 
 const app = new App();
 const containerElement = document.getElementById('app');
 
 setPropertyDidChange(() => {
+  app.scheduleRerender();
+});
+
+setPropertyDidChangeWc(() => {
   app.scheduleRerender();
 });
 

@@ -1,6 +1,12 @@
-import Component from '@glimmer/component';
+import Component, { tracked } from '@glimmer/component';
 
 export default class HelloWc extends Component {
-  color = 'red';
+  @tracked color = 'red';
   text = 'initial value from outer glimmer template';
+  changeColor(): void {
+    this.color = {
+      red: 'green',
+      green: 'red'
+    }[this.color];
+  }
 }
