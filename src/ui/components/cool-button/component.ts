@@ -1,9 +1,15 @@
 import App from '../../../main';
 import { getOwner } from '@glimmer/di';
-import { CustomElementComponent, tracked } from '@glimmer/web-component';
+import { CustomElementComponent, elementAttribute, elementProperty } from '@glimmer/web-component';
 
 export default class CoolButton extends CustomElementComponent {
-  get color(): string {
-    return this.args.htmlAttributes.color;
+  @elementAttribute
+  color: string;
+
+  @elementProperty
+  foo: { bar: number } = { bar: 10 };
+
+  didAppendLayout() {
+    console.log(this.foo);
   }
 };

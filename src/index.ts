@@ -1,15 +1,11 @@
 import App from './main';
 import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
-import { initializeCustomElement, CustomElementComponentManager, setPropertyDidChange as setPropertyDidChangeWc } from '@glimmer/web-component';
+import { initializeCustomElement, CustomElementComponentManager } from '@glimmer/web-component';
 
 const app = new App();
 const containerElement = document.getElementById('app');
 
 setPropertyDidChange(() => {
-  app.scheduleRerender();
-});
-
-setPropertyDidChangeWc(() => {
   app.scheduleRerender();
 });
 
@@ -20,6 +16,7 @@ app.registerInitializer({
   }
 });
 
-initializeCustomElement(app, 'cool-button', 'cool-button-wc', ['color']);
+initializeCustomElement({ app, componentName: 'cool-button', elementName: 'cool-button-wc' });
 app.renderComponent('hello-wc', containerElement);
+
 app.boot();

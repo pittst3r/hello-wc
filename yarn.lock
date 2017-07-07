@@ -2,11 +2,11 @@
 # yarn lockfile v1
 
 
-"@glimmer/application-pipeline@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.npmjs.org/@glimmer/application-pipeline/-/application-pipeline-0.7.3.tgz#d0c045c5da241942afabea67d1715cfbde8d3daa"
+"@glimmer/application-pipeline@0.8.0-beta.1":
+  version "0.8.0-beta.1"
+  resolved "https://registry.npmjs.org/@glimmer/application-pipeline/-/application-pipeline-0.8.0-beta.1.tgz#e8458ab3652b783ca6fbb7246dcd0f2ccd6915c5"
   dependencies:
-    "@glimmer/resolution-map-builder" "^0.3.8"
+    "@glimmer/resolution-map-builder" "^0.5.1"
     "@glimmer/resolver-configuration-builder" "^0.1.2"
     babel-plugin-debug-macros "^0.1.7"
     babel-plugin-external-helpers "^6.22.0"
@@ -27,7 +27,7 @@
     broccoli-typescript-compiler "^1.0.1"
     broccoli-uglify-sourcemap "^1.4.0"
     common-tags "^1.4.0"
-    ember-build-utilities "^0.3.0"
+    ember-build-utilities "^0.4.0"
     ember-cli-inject-live-reload "^1.4.1"
     ember-cli-normalize-entity-name "^1.0.0"
     ember-cli-preprocess-registry "^3.1.1"
@@ -43,19 +43,19 @@
     silent-error "^1.1.0"
     walk-sync "^0.3.1"
 
-"@glimmer/application@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.npmjs.org/@glimmer/application/-/application-0.5.1.tgz#d63e5175d75693e9d9ec5646e3f750d1be9c511e"
+"@glimmer/application@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.npmjs.org/@glimmer/application/-/application-0.7.2.tgz#82cc78367f54c11c953c8624cba92425473e1d88"
   dependencies:
-    "@glimmer/compiler" "^0.24.0-beta.4"
-    "@glimmer/component" "^0.4.0"
+    "@glimmer/compiler" "^0.26.2"
+    "@glimmer/component" "^0.6.0"
     "@glimmer/di" "^0.1.9"
     "@glimmer/env" "^0.1.7"
-    "@glimmer/object-reference" "^0.24.0-beta.4"
-    "@glimmer/reference" "^0.24.0-beta.4"
+    "@glimmer/object-reference" "^0.26.2"
+    "@glimmer/reference" "^0.26.2"
     "@glimmer/resolver" "^0.3.0"
-    "@glimmer/runtime" "^0.24.0-beta.4"
-    "@glimmer/util" "^0.24.0-beta.4"
+    "@glimmer/runtime" "^0.26.2"
+    "@glimmer/util" "^0.26.2"
 
 "@glimmer/blueprint@^0.2.1":
   version "0.2.1"
@@ -63,25 +63,15 @@
   dependencies:
     ember-cli-string-utils "^1.1.0"
 
-"@glimmer/compiler@^0.24.0-beta.4":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/compiler/-/compiler-0.24.0-beta.6.tgz#5fd984f8967771eef78d9f0d8306556dffe662f6"
+"@glimmer/compiler@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/compiler/-/compiler-0.26.2.tgz#06699f02b61136f6014e7c17ba281842a5e56f26"
   dependencies:
-    "@glimmer/interfaces" "^0.24.0-beta.6"
-    "@glimmer/syntax" "^0.24.0-beta.6"
-    "@glimmer/util" "^0.24.0-beta.6"
-    "@glimmer/wire-format" "^0.24.0-beta.6"
+    "@glimmer/interfaces" "^0.26.2"
+    "@glimmer/syntax" "^0.26.2"
+    "@glimmer/util" "^0.26.2"
+    "@glimmer/wire-format" "^0.26.2"
     simple-html-tokenizer "^0.3.0"
-
-"@glimmer/component@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/@glimmer/component/-/component-0.4.0.tgz#2cd491045f4d86502cf4f3249f8f6c51de046b0c"
-  dependencies:
-    "@glimmer/di" "^0.1.9"
-    "@glimmer/env" "^0.1.7"
-    "@glimmer/reference" "^0.24.0-beta.4"
-    "@glimmer/runtime" "^0.24.0-beta.4"
-    "@glimmer/util" "^0.24.0-beta.4"
 
 "@glimmer/component@^0.5.0":
   version "0.5.0"
@@ -92,6 +82,16 @@
     "@glimmer/reference" "^0.25.1"
     "@glimmer/runtime" "^0.25.1"
     "@glimmer/util" "^0.25.1"
+
+"@glimmer/component@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/@glimmer/component/-/component-0.6.0.tgz#60b88afb7ba87a9d30d44fe2dd167609be1e19cc"
+  dependencies:
+    "@glimmer/di" "^0.1.9"
+    "@glimmer/env" "^0.1.7"
+    "@glimmer/reference" "^0.26.2"
+    "@glimmer/runtime" "^0.26.2"
+    "@glimmer/util" "^0.26.2"
 
 "@glimmer/di@^0.1.9":
   version "0.1.11"
@@ -105,11 +105,11 @@
   version "0.1.7"
   resolved "https://registry.npmjs.org/@glimmer/env/-/env-0.1.7.tgz#fd2d2b55a9029c6b37a6c935e8c8871ae70dfa07"
 
-"@glimmer/interfaces@^0.24.0-beta.6":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/interfaces/-/interfaces-0.24.0-beta.6.tgz#a01ee0aa1897b579a0baad717e616854de97231f"
+"@glimmer/inline-precompile@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@glimmer/inline-precompile/-/inline-precompile-1.0.1.tgz#4201119a358002d4bb2b5d8fa633327239fb9336"
   dependencies:
-    "@glimmer/wire-format" "^0.24.0-beta.6"
+    babel-plugin-glimmer-inline-precompile "^1.2.0"
 
 "@glimmer/interfaces@^0.25.1":
   version "0.25.1"
@@ -117,12 +117,11 @@
   dependencies:
     "@glimmer/wire-format" "^0.25.1"
 
-"@glimmer/object-reference@^0.24.0-beta.4", "@glimmer/object-reference@^0.24.0-beta.6":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/object-reference/-/object-reference-0.24.0-beta.6.tgz#a09f8bed638c4d566a96c464417cf4211167b297"
+"@glimmer/interfaces@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/interfaces/-/interfaces-0.26.2.tgz#f03e7309584006de164b82ff924692b210888e19"
   dependencies:
-    "@glimmer/reference" "^0.24.0-beta.6"
-    "@glimmer/util" "^0.24.0-beta.6"
+    "@glimmer/wire-format" "^0.26.2"
 
 "@glimmer/object-reference@^0.25.1":
   version "0.25.1"
@@ -131,12 +130,12 @@
     "@glimmer/reference" "^0.25.1"
     "@glimmer/util" "^0.25.1"
 
-"@glimmer/object@^0.24.0-beta.6":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/object/-/object-0.24.0-beta.6.tgz#60b49a3e6096b5b2a58d0a5a8476468d43884287"
+"@glimmer/object-reference@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/object-reference/-/object-reference-0.26.2.tgz#df3688d3a0003775042e66c06669b5b183503b36"
   dependencies:
-    "@glimmer/object-reference" "^0.24.0-beta.6"
-    "@glimmer/util" "^0.24.0-beta.6"
+    "@glimmer/reference" "^0.26.2"
+    "@glimmer/util" "^0.26.2"
 
 "@glimmer/object@^0.25.1":
   version "0.25.1"
@@ -145,11 +144,12 @@
     "@glimmer/object-reference" "^0.25.1"
     "@glimmer/util" "^0.25.1"
 
-"@glimmer/reference@^0.24.0-beta.4", "@glimmer/reference@^0.24.0-beta.6":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/reference/-/reference-0.24.0-beta.6.tgz#0adeb91f750ab0ceb95b03bbc5262474684aa70a"
+"@glimmer/object@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/object/-/object-0.26.2.tgz#a6a99d88bc4acd5ce9f2e46a62b618b15e7d5bfa"
   dependencies:
-    "@glimmer/util" "^0.24.0-beta.6"
+    "@glimmer/object-reference" "^0.26.2"
+    "@glimmer/util" "^0.26.2"
 
 "@glimmer/reference@^0.25.1":
   version "0.25.1"
@@ -157,9 +157,15 @@
   dependencies:
     "@glimmer/util" "^0.25.1"
 
-"@glimmer/resolution-map-builder@^0.3.8":
-  version "0.3.8"
-  resolved "https://registry.npmjs.org/@glimmer/resolution-map-builder/-/resolution-map-builder-0.3.8.tgz#9da5d9980f2cc0f149c060c2e767261eed25672d"
+"@glimmer/reference@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/reference/-/reference-0.26.2.tgz#b14ad1180559e51353519ee62f21aabad737b0cc"
+  dependencies:
+    "@glimmer/util" "^0.26.2"
+
+"@glimmer/resolution-map-builder@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/@glimmer/resolution-map-builder/-/resolution-map-builder-0.5.1.tgz#b07395f5d8d9a1d20f407169cd2d6b8cd48ab3f9"
   dependencies:
     broccoli-plugin "^1.3.0"
     silent-error "^1.0.1"
@@ -177,17 +183,6 @@
   dependencies:
     "@glimmer/di" "^0.2.0"
 
-"@glimmer/runtime@^0.24.0-beta.4":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/runtime/-/runtime-0.24.0-beta.6.tgz#cf35648a61fc7f7b17f25a88ac0ddabe7a02e4ec"
-  dependencies:
-    "@glimmer/interfaces" "^0.24.0-beta.6"
-    "@glimmer/object" "^0.24.0-beta.6"
-    "@glimmer/object-reference" "^0.24.0-beta.6"
-    "@glimmer/reference" "^0.24.0-beta.6"
-    "@glimmer/util" "^0.24.0-beta.6"
-    "@glimmer/wire-format" "^0.24.0-beta.6"
-
 "@glimmer/runtime@^0.25.1":
   version "0.25.1"
   resolved "https://registry.npmjs.org/@glimmer/runtime/-/runtime-0.25.1.tgz#ead91cc51a44ff9777fee0a786d32aeb8b8e993a"
@@ -199,38 +194,49 @@
     "@glimmer/util" "^0.25.1"
     "@glimmer/wire-format" "^0.25.1"
 
-"@glimmer/syntax@^0.24.0-beta.6":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/syntax/-/syntax-0.24.0-beta.6.tgz#237c96be37d933aa8bb43a6349e11c25f02e5e1a"
+"@glimmer/runtime@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/runtime/-/runtime-0.26.2.tgz#2629259b619828bb058b8d9bc05a7c745ba53b05"
   dependencies:
-    "@glimmer/interfaces" "^0.24.0-beta.6"
-    "@glimmer/util" "^0.24.0-beta.6"
+    "@glimmer/interfaces" "^0.26.2"
+    "@glimmer/object" "^0.26.2"
+    "@glimmer/object-reference" "^0.26.2"
+    "@glimmer/reference" "^0.26.2"
+    "@glimmer/util" "^0.26.2"
+    "@glimmer/wire-format" "^0.26.2"
+
+"@glimmer/syntax@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/syntax/-/syntax-0.26.2.tgz#c8c3d5caeb09cf4614d5a3f98becbc62335728f3"
+  dependencies:
+    "@glimmer/interfaces" "^0.26.2"
+    "@glimmer/util" "^0.26.2"
     handlebars "^4.0.6"
     simple-html-tokenizer "^0.3.0"
-
-"@glimmer/util@^0.24.0-beta.4", "@glimmer/util@^0.24.0-beta.6":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/util/-/util-0.24.0-beta.6.tgz#eb4aebac75cd6936f146e95ada501c16bbe99f9c"
 
 "@glimmer/util@^0.25.1":
   version "0.25.2"
   resolved "https://registry.npmjs.org/@glimmer/util/-/util-0.25.2.tgz#a79e7100f7c38181be026dddf2d3b4ce8a8c8421"
 
+"@glimmer/util@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/util/-/util-0.26.2.tgz#829e0cff7cee767689267f37533ea789da0bcc36"
+
 "@glimmer/web-component@^0.2.0":
   version "0.2.0"
   resolved "https://registry.npmjs.org/@glimmer/web-component/-/web-component-0.2.0.tgz#21840f61336e042482d6f0d3788fca9886e1d5d0"
-
-"@glimmer/wire-format@^0.24.0-beta.6":
-  version "0.24.0-beta.6"
-  resolved "https://registry.npmjs.org/@glimmer/wire-format/-/wire-format-0.24.0-beta.6.tgz#568b04136780c6f522240578f590180e5221f57c"
-  dependencies:
-    "@glimmer/util" "^0.24.0-beta.6"
 
 "@glimmer/wire-format@^0.25.1":
   version "0.25.1"
   resolved "https://registry.npmjs.org/@glimmer/wire-format/-/wire-format-0.25.1.tgz#cd69f3595a08954fa68a3f1df4feafffa1c3f3de"
   dependencies:
     "@glimmer/util" "^0.25.1"
+
+"@glimmer/wire-format@^0.26.2":
+  version "0.26.2"
+  resolved "https://registry.npmjs.org/@glimmer/wire-format/-/wire-format-0.26.2.tgz#5ff95a61c32c18bc65bd5b86af74bcbdd38e62d9"
+  dependencies:
+    "@glimmer/util" "^0.26.2"
 
 "@types/rsvp@^3.0.0":
   version "3.3.0"
@@ -406,9 +412,21 @@ async-foreach@^0.1.3:
   version "0.1.3"
   resolved "https://registry.npmjs.org/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
 
+async-promise-queue@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/async-promise-queue/-/async-promise-queue-1.0.3.tgz#70c9c37635620f894978814b6c65e6e14e2573ee"
+  dependencies:
+    async "^2.4.1"
+
 async@^1.4.0, async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.npmjs.org/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+
+async@^2.4.1:
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/async/-/async-2.5.0.tgz#843190fd6b7357a0b9e1c956edddd5ec8462b54d"
+  dependencies:
+    lodash "^4.14.0"
 
 async@~0.2.9:
   version "0.2.10"
@@ -595,6 +613,10 @@ babel-plugin-external-helpers@^6.22.0:
   resolved "https://registry.npmjs.org/babel-plugin-external-helpers/-/babel-plugin-external-helpers-6.22.0.tgz#2285f48b02bd5dede85175caf8c62e86adccefa1"
   dependencies:
     babel-runtime "^6.22.0"
+
+babel-plugin-glimmer-inline-precompile@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/babel-plugin-glimmer-inline-precompile/-/babel-plugin-glimmer-inline-precompile-1.2.0.tgz#02794b17aac6351da09596b54d9ec675428bba3e"
 
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
@@ -1017,16 +1039,19 @@ broccoli-asset-rewrite@^1.1.0:
     broccoli-filter "^1.2.3"
 
 broccoli-babel-transpiler@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/broccoli-babel-transpiler/-/broccoli-babel-transpiler-6.0.0.tgz#a52c5404bf36236849da503b011fd41fe64a00a2"
+  version "6.1.1"
+  resolved "https://registry.npmjs.org/broccoli-babel-transpiler/-/broccoli-babel-transpiler-6.1.1.tgz#938f470e1ddb47047a77ef5e38f34c21de0e85a8"
   dependencies:
     babel-core "^6.14.0"
     broccoli-funnel "^1.0.0"
     broccoli-merge-trees "^1.0.0"
-    broccoli-persistent-filter "^1.0.1"
+    broccoli-persistent-filter "^1.4.0"
     clone "^2.0.0"
     hash-for-dep "^1.0.2"
+    heimdalljs-logger "^0.1.7"
     json-stable-stringify "^1.0.0"
+    rsvp "^3.5.0"
+    workerpool "^2.2.1"
 
 broccoli-brocfile-loader@^0.18.0:
   version "0.18.0"
@@ -1035,8 +1060,8 @@ broccoli-brocfile-loader@^0.18.0:
     findup-sync "^0.4.2"
 
 broccoli-builder@^0.18.3:
-  version "0.18.4"
-  resolved "https://registry.npmjs.org/broccoli-builder/-/broccoli-builder-0.18.4.tgz#abc6db2c07d214454918e2997ea87441b69b69d3"
+  version "0.18.8"
+  resolved "https://registry.npmjs.org/broccoli-builder/-/broccoli-builder-0.18.8.tgz#fe54694d544c3cdfdb01028e802eeca65749a879"
   dependencies:
     heimdalljs "^0.2.0"
     promise-map-series "^0.2.1"
@@ -1094,10 +1119,10 @@ broccoli-concat@^3.2.2:
     walk-sync "^0.3.1"
 
 broccoli-config-loader@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/broccoli-config-loader/-/broccoli-config-loader-1.0.0.tgz#c3cf5ecfaffc04338c6f1d5d38dc36baeaa131ba"
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/broccoli-config-loader/-/broccoli-config-loader-1.0.1.tgz#d10aaf8ebc0cb45c1da5baa82720e1d88d28c80a"
   dependencies:
-    broccoli-caching-writer "^2.0.4"
+    broccoli-caching-writer "^3.0.3"
 
 broccoli-config-replace@^1.1.2:
   version "1.1.2"
@@ -1192,8 +1217,8 @@ broccoli-merge-trees@^2.0.0:
     merge-trees "^1.0.1"
 
 broccoli-middleware@^1.0.0-beta.8:
-  version "1.0.0-beta.8"
-  resolved "https://registry.npmjs.org/broccoli-middleware/-/broccoli-middleware-1.0.0-beta.8.tgz#89cb6a9950ff0cf5bd75071d83d7cd6f6a11a95b"
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/broccoli-middleware/-/broccoli-middleware-1.0.0.tgz#92f4e1fb9a791ea986245a7077f35cc648dab097"
   dependencies:
     handlebars "^4.0.4"
     mime "^1.2.11"
@@ -1202,17 +1227,18 @@ broccoli-node-info@1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/broccoli-node-info/-/broccoli-node-info-1.1.0.tgz#3aa2e31e07e5bdb516dd25214f7c45ba1c459412"
 
-broccoli-persistent-filter@^1.0.1, broccoli-persistent-filter@^1.1.5, broccoli-persistent-filter@^1.1.6, broccoli-persistent-filter@^1.2.13, broccoli-persistent-filter@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/broccoli-persistent-filter/-/broccoli-persistent-filter-1.3.1.tgz#d02556a135c77dfb859bba7844bc3539be7168e1"
+broccoli-persistent-filter@^1.1.5, broccoli-persistent-filter@^1.1.6, broccoli-persistent-filter@^1.2.13, broccoli-persistent-filter@^1.3.1, broccoli-persistent-filter@^1.4.0:
+  version "1.4.2"
+  resolved "https://registry.npmjs.org/broccoli-persistent-filter/-/broccoli-persistent-filter-1.4.2.tgz#17af1278a25ff2556f9d7d23e115accfad3a7ce7"
   dependencies:
     async-disk-cache "^1.2.1"
+    async-promise-queue "^1.0.3"
     broccoli-plugin "^1.0.0"
+    crypto "0.0.3"
     fs-tree-diff "^0.5.2"
     hash-for-dep "^1.0.2"
     heimdalljs "^0.2.1"
     heimdalljs-logger "^0.1.7"
-    md5-hex "^1.0.2"
     mkdirp "^0.5.1"
     promise-map-series "^0.2.1"
     rimraf "^2.6.1"
@@ -1446,8 +1472,8 @@ can-symlink@^1.0.0:
     tmp "0.0.28"
 
 caniuse-lite@^1.0.30000684:
-  version "1.0.30000692"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000692.tgz#34600fd7152352d85a47f4662a3b51b02d8b646f"
+  version "1.0.30000696"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000696.tgz#30f2695d2a01a0dfd779a26ab83f4d134b3da5cc"
 
 capture-exit@^1.1.0:
   version "1.2.0"
@@ -1610,10 +1636,8 @@ commander@2.8.x:
     graceful-readlink ">= 1.0.0"
 
 commander@^2.5.0, commander@^2.6.0:
-  version "2.9.0"
-  resolved "https://registry.npmjs.org/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
-  dependencies:
-    graceful-readlink ">= 1.0.0"
+  version "2.11.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
 commander@~2.1.0:
   version "2.1.0"
@@ -1780,6 +1804,10 @@ crypto-random-string@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
 
+crypto@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/crypto/-/crypto-0.0.3.tgz#470a81b86be4c5ee17acc8207a1f5315ae20dbb0"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -1883,12 +1911,12 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.14:
-  version "1.3.14"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.14.tgz#64af0f9efd3c3c6acd57d71f83b49ca7ee9c4b43"
+  version "1.3.15"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.15.tgz#08397934891cbcfaebbd18b82a95b5a481138369"
 
-ember-build-utilities@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/ember-build-utilities/-/ember-build-utilities-0.3.0.tgz#82a4dfdc6d382bfd730a8cfcf41092b56ba70de6"
+ember-build-utilities@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/ember-build-utilities/-/ember-build-utilities-0.4.0.tgz#dbdf1bb089c7212bca8414112f8663a4fa2e077c"
   dependencies:
     broccoli-babel-transpiler "^6.0.0"
     broccoli-funnel "^1.1.0"
@@ -1927,8 +1955,8 @@ ember-cli-is-package-missing@^1.0.0:
   resolved "https://registry.npmjs.org/ember-cli-is-package-missing/-/ember-cli-is-package-missing-1.0.0.tgz#6e6184cafb92635dd93ca6c946b104292d4e3390"
 
 ember-cli-legacy-blueprints@^0.1.2:
-  version "0.1.4"
-  resolved "https://registry.npmjs.org/ember-cli-legacy-blueprints/-/ember-cli-legacy-blueprints-0.1.4.tgz#83d6c005ac0e39750ff9dd45cd1b78cf697150c6"
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/ember-cli-legacy-blueprints/-/ember-cli-legacy-blueprints-0.1.5.tgz#93c15ca242ec5107d62a8af7ec30f6ac538f3ad9"
   dependencies:
     chalk "^1.1.1"
     ember-cli-get-component-path-option "^1.0.0"
@@ -2878,8 +2906,8 @@ homedir-polyfill@^1.0.0:
     parse-passwd "^1.0.0"
 
 hosted-git-info@^2.1.4, hosted-git-info@^2.1.5:
-  version "2.4.2"
-  resolved "https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.4.2.tgz#0076b9f46a270506ddbaaea56496897460612a67"
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
 
 http-errors@~1.6.1:
   version "1.6.1"
@@ -3140,8 +3168,8 @@ js-base64@^2.1.8:
   resolved "https://registry.npmjs.org/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
 
 js-tokens@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
 js-yaml@^3.2.5, js-yaml@^3.2.7, js-yaml@^3.6.1:
   version "3.8.4"
@@ -3412,7 +3440,7 @@ lodash@^3.10.1:
   version "3.10.1"
   resolved "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1, lodash@~4.17.4:
+lodash@^4.0.0, lodash@^4.14.0, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1, lodash@~4.17.4:
   version "4.17.4"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3482,7 +3510,7 @@ matcher-collection@^1.0.0, matcher-collection@^1.0.1:
   dependencies:
     minimatch "^3.0.2"
 
-md5-hex@^1.0.2, md5-hex@^1.3.0:
+md5-hex@^1.3.0:
   version "1.3.0"
   resolved "https://registry.npmjs.org/md5-hex/-/md5-hex-1.3.0.tgz#d2c4afe983c4370662179b8cad145219135046c4"
   dependencies:
@@ -3747,8 +3775,8 @@ node-sass@^4.1.0:
     abbrev "1"
 
 normalize-package-data@^2.3.2, normalize-package-data@^2.3.4:
-  version "2.3.8"
-  resolved "https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.3.8.tgz#d819eda2a9dedbd1ffa563ea4071d936782295bb"
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.4.0.tgz#12f95a307d58352075a04907b84ac8be98ac012f"
   dependencies:
     hosted-git-info "^2.1.4"
     is-builtin-module "^1.0.0"
@@ -3775,8 +3803,8 @@ npm-run-path@^2.0.0:
     path-key "^2.0.0"
 
 "npmlog@0 || 1 || 2 || 3 || 4", npmlog@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/npmlog/-/npmlog-4.1.0.tgz#dc59bee85f64f00ed424efb2af0783df25d1c0b5"
+  version "4.1.2"
+  resolved "https://registry.npmjs.org/npmlog/-/npmlog-4.1.2.tgz#08a7f2a8bf734604779a9efa4ad5cc717abb954b"
   dependencies:
     are-we-there-yet "~1.1.2"
     console-control-strings "~1.1.0"
@@ -3799,7 +3827,7 @@ object-assign@^2.0.0:
   version "2.1.1"
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-2.1.1.tgz#43c36e5d569ff8e4816c4efa8be02d26967c18aa"
 
-object-assign@^4.0.1, object-assign@^4.1.0:
+object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
@@ -4087,15 +4115,15 @@ read-pkg@^1.0.0:
     path-type "^1.0.0"
 
 readable-stream@^2, readable-stream@^2.0.1, readable-stream@^2.0.6, readable-stream@^2.2.2:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.0.tgz#640f5dcda88c91a8dc60787145629170813a1ed2"
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.3.tgz#368f2512d79f9d46fdfc71349ae7878bbc1eb95c"
   dependencies:
     core-util-is "~1.0.0"
     inherits "~2.0.3"
     isarray "~1.0.0"
     process-nextick-args "~1.0.6"
-    safe-buffer "~5.1.0"
-    string_decoder "~1.0.0"
+    safe-buffer "~5.1.1"
+    string_decoder "~1.0.3"
     util-deprecate "~1.0.1"
 
 readable-stream@~1.0.2:
@@ -4301,9 +4329,9 @@ rollup@^0.41.4, rollup@^0.41.6:
   dependencies:
     source-map-support "^0.4.0"
 
-rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.2.1, rsvp@^3.3.3:
-  version "3.5.0"
-  resolved "https://registry.npmjs.org/rsvp/-/rsvp-3.5.0.tgz#a62c573a4ae4e1dfd0697ebc6242e79c681eaa34"
+rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.2.1, rsvp@^3.3.3, rsvp@^3.5.0:
+  version "3.6.0"
+  resolved "https://registry.npmjs.org/rsvp/-/rsvp-3.6.0.tgz#666dfffa715f7e10eef76f4d1e56fb2566fce5c3"
 
 rsvp@~3.2.1:
   version "3.2.1"
@@ -4319,13 +4347,9 @@ rx@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
 
-safe-buffer@^5.0.1, safe-buffer@~5.1.0:
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.0.tgz#fe4c8460397f9eaaaa58e73be46273408a45e223"
-
-safe-buffer@~5.0.1:
-  version "5.0.1"
-  resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
+safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+  version "5.1.1"
+  resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
 safe-json-parse@~1.0.1:
   version "1.0.1"
@@ -4583,11 +4607,11 @@ string_decoder@0.10, string_decoder@~0.10.x:
   version "0.10.31"
   resolved "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
 
-string_decoder@~1.0.0:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/string_decoder/-/string_decoder-1.0.2.tgz#b29e1f4e1125fa97a10382b8a533737b7491e179"
+string_decoder@~1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/string_decoder/-/string_decoder-1.0.3.tgz#0fc67d7c141825de94282dd536bec6b9bce860ab"
   dependencies:
-    safe-buffer "~5.0.1"
+    safe-buffer "~5.1.0"
 
 stringstream@~0.0.4:
   version "0.0.5"
@@ -4668,8 +4692,8 @@ temp@0.8.3:
     rimraf "~2.2.6"
 
 testem@^1.15.0:
-  version "1.16.2"
-  resolved "https://registry.npmjs.org/testem/-/testem-1.16.2.tgz#95446d310a10e852d3ebdbc0ce2b3fd75378ba29"
+  version "1.18.0"
+  resolved "https://registry.npmjs.org/testem/-/testem-1.18.0.tgz#4a9f798509d260dca928823aaae5dbc6a9c977ee"
   dependencies:
     backbone "^1.1.2"
     bluebird "^3.4.6"
@@ -4787,8 +4811,8 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
 typescript@^2.2.2:
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-2.4.0.tgz#aef5a8d404beba36ad339abf079ddddfffba86dd"
+  version "2.4.1"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-2.4.1.tgz#c3ccb16ddaa0b2314de031e7e6fee89e5ba346bc"
 
 uc.micro@^1.0.1, uc.micro@^1.0.3:
   version "1.0.3"
@@ -4946,6 +4970,12 @@ wordwrap@0.0.2:
 wordwrap@~0.0.2:
   version "0.0.3"
   resolved "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+
+workerpool@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/workerpool/-/workerpool-2.2.1.tgz#41ebff11d5859da948fdb2c850b57da69240988a"
+  dependencies:
+    object-assign "^4.1.1"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"
